@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AlbumMusicV02</title>
+  <link rel="stylesheet" href="./css/AlbumMusic.css">
+  <script src="./jas/AlbumMusic.js" defer></script>
+
+</head>
+<body>
+  <div id="wrap">
+    <table>
+      <tr>
+        <td class="memselect">
+          <div class="tooltip">
+            <input type="image" src="./img/menubar.png" id="tooltipBtn" />
+            <div class="tooltiptext">
+              <p>♬ fromis_9 - Supersonic ♬</p>
+              <p>♬ fromis_9 - DM ♬</p>
+              <p>♬ fromis_9 - LoveBomb ♬</p>
+              <p>♬ fromis_9 - Stay This Way ♬</p>
+              <p>♬ fromis_9 - We Go ♬</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td id="Text" class="musicText">♬ fromis_9 - Supersonic ♬</td>
+      </tr>
+      <tr>
+        <td><img id="mainImg" src="./img/supersonic.jpg" /></td>
+      </tr>
+      <tr>
+        <td>
+          <audio id="audio">
+            <source src="./music/fromis_9_Supersonic.mp3" type="audio/mpeg" />
+          </audio>
+          <div id="timeDisplay" style="margin-top: 10px; font-weight: bold;">00:00 / 00:00</div>
+          <div id="progressContainer">
+            <div id="progressBar"></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><hr /></td>
+      </tr>
+      <tr>
+        <td>
+          <input type="image" id="firstBtn" src="./img/rewind.png" />
+          <input type="image" id="prevBtn" src="./img/undo.png" />
+          <input type="image" id="playPause" src="./img/play.png" onclick="playPause()" />
+          <input type="image" id="nextBtn" src="./img/redo.png" />
+          <input type="image" id="lastBtn" src="./img/forward.png" />
+          <input type="image" id="stopBtn" src="./img/stop.png" onclick="stopMusic()" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
