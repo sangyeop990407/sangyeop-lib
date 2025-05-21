@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnglishStudy</title>
+    <link rel="stylesheet" href="./EngloshStudy.css">
+  <script src="./EnglishStudy.js"></script>
+</head>
+<body>
+    <div id="wrap">
+    <div class="btn-container">
+        <table class="table2">
+    <tr>
+        <td rowspan="2" id="rowNum01">2</td>
+        <td><button onclick="adjustPageSize(1)">▲1단위</button></td>
+        <td><button onclick="adjustPageSize(10)">▲10단위</button></td>
+        <td rowspan="2" id="rowNum02">2</td>
+        <td><button onclick="adjustPageSize(1)">▲1단위</button></td>
+        <td><button onclick="adjustPageSize(10)">▲10단위</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="adjustPageSize(-1)">▼1단위</button></td>
+        <td><button onclick="adjustPageSize(-10)">▼10단위</button></td>
+        <td><button onclick="adjustPageSize(-1)">▼1단위</button></td>
+        <td><button onclick="adjustPageSize(-10)">▼10단위</button></td>
+    </tr>
+</table>
+
+    </div>
+
+    <table class="table1">
+        <tr>
+            <td>번호</td>
+            <td colspan="4">단어</td>
+            <td colspan="4">발음</td>
+            <td colspan="4">뜻</td>
+        </tr>
+        <tr>
+            <td rowspan="4">1</td>
+            <td colspan="4">abandon</td>
+            <td colspan="4">ǝbǽndǝn</td>
+            <td colspan="4">포기하다</td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="text" id="first" class="word1"></td>
+            <td colspan="3"><input type="text" class="word1"></td>
+            <td colspan="3"><input type="text" class="word1"></td>
+            <td colspan="3"><input type="text" class="word1"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="text" class="word1"></td>
+            <td colspan="3"><input type="text" class="word1"></td>
+            <td colspan="3"><input type="text" class="word1"></td>
+            <td colspan="3"><input type="text" class="word1"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="text" class="word1"></td>
+            <td colspan="3"><input type="text" class="word1"></td>
+            <td colspan="6"><input type="text" id="score1" readonly="readonly"></td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">2</td>
+            <td colspan="4">abandoned</td>
+            <td colspan="4">bӕndənd</td>
+            <td colspan="4">버림받은</td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="text" class="word2"></td>
+            <td colspan="3"><input type="text" class="word2"></td>
+            <td colspan="3"><input type="text" class="word2"></td>
+            <td colspan="3"><input type="text" class="word2"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="text" class="word2"></td>
+            <td colspan="3"><input type="text" class="word2"></td>
+            <td colspan="3"><input type="text" class="word2"></td>
+            <td colspan="3"><input type="text" class="word2"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="text" class="word2"></td>
+            <td colspan="3"><input type="text" class="word2"></td>
+            <td colspan="6"><input type="text" id="score2" readonly="readonly"></td>
+        </tr>
+
+    </table>
+</div>
+<audio id="correctSound" src="./sound/answer.wav" preload="auto"></audio>
+<audio id="wrongSound" src="./sound/wrong.wav" preload="auto"></audio>
+
+</body>
+</html>
